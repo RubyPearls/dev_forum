@@ -1,6 +1,6 @@
 %h1 Made by, Made for New Developers
 
-%p This forum was made so that those who are already accepted to a bootcamp or plan on registering for one can find someone to pair program with remotely and go over the pre-work. We can also use this outlet for working on projects together or diving further into topics of interest. In this way we can hold each other accountable for studying and succeeding. I'm assumming beginner devs are studying Ruby or Javascript. Sorry Python, C#, and other language lovers. I am sure there is a great venue for you elsewhere.
+%p This forum was made so that those who are already accepted to a bootcamp or plan on registering for one can find someone to pair program with remotely and go over the pre-work. We can also use this outlet for working on projects together or diving further into topics of interest. In this way we can hold each other accountable for studying and succeeding. I'm assumming beginner devs are studying Ruby or Javascript. Sorry Python, C#, and other language lovers. My expertise doesn't lie there but you are certainly welcome.
 
 %h4 This isn't a place for asking what the best bootcamp is or which one you should attend.
 
@@ -8,19 +8,16 @@
 
 %h4 This is a place mentoring and sharing knowledge.
 
-%h4 Ask your question and get help from the group. 
+%h4 Ask your question and get help from the group.
+
+%p Introduce yourself. Include hobbies, language of interest, and whether or not you are/have joined a bootcamp and where you are in the process. Any particular topic or application you would like to work on?
 
 
 
-
-
-
-- @posts.each do |post|
-  %h2= link_to post.title, post
-  %p
-    Published
-    =time_ago_in_words(post.created_at)
-    ago
-
-
-= link_to "New Post", new_post_path
+#posts
+  - @posts.each do |post|
+    %h2= link_to post.title, post
+    %p
+      Published
+      =time_ago_in_words(post.created_at)
+      ago
