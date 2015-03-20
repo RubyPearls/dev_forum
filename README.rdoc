@@ -3,6 +3,3 @@
 
 -Work in Progress.
 
-Live on Heroku
-
-https://jsrubydev.herokuapp.com/
